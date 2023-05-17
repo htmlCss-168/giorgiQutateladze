@@ -676,7 +676,7 @@ main section{
 
 .giorgi h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
     color: white;
 }
@@ -684,6 +684,7 @@ main section{
 .giorgi span{
     margin-left: 5px;
     color: orange;
+    font-size: 12px;
 }
 
 /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */

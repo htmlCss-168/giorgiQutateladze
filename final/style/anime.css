@@ -150,12 +150,7 @@ main{
     justify-content: space-between;
     margin-top: 50px;
 }
-.giorgi h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    text-align: center;
-    color: white;
-}
+
 
 .div1{
     /* background-color: #006b30; */
@@ -377,6 +372,30 @@ main{
     transform: scale(1.2) rotate(360deg);
     
 }
+
+.giorgi2{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: 100%;
+    height:fit-content;
+    }
+
+.h22{color:black;}
+
+.giorgi2 h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+.giorgi2 span{
+    margin-left: 5px;
+    color: orange;
+    font-size: 12px;
+}
+
 
 
 
