@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <title>lesson7</title>
+        <link rel="stylesheet" href="style/signin.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="smallnavAround">
+                <nav class="smallnav2">
+                    <a href="signin.html" class="smallnav2a2">SIGN UP</a>
+                    <a href="signin.html">SIGN IN</a>
+                </nav>
+            </div>
+
+            <div class="navmenuaround1">
+                <div class="navmenuFirst">
+                    <h1>FiLM.TV</h1>
+                
+                    <nav>
+                        <a id="navHome" href="index.html"><i class="fa-solid fa-house"></i> HOME</a>
+
+                        <a id="navMovies" href="movies.html"><i class="fa-solid fa-video"></i> MOVIES</a>
+
+                        <a id="navSeries" href="tvseries.html"><i class="fa-solid fa-photo-film"></i> TVSERIES</a>
+                        <a id="navAnime" href="anime.html"><i class="fa-solid fa-film"></i> ANIMATION</a>
+
+                        <a id="navNews" href="news.html"><i class="fa-solid fa-newspaper"></i> NEWS</a>
+                    </nav>
+
+                    <div class="SearchArea">
+                        <input type="" placeholder="search here">
+                        <button>GO</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="logoSearchv2">
+                <h2>FiLM.TV</h2>
+                <div class="searchv2">
+                    <input placeholder="Search here...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+             
+            <div class="iconsDiv">
+                <a href="https://www.facebook.com/" class="iconbgcontainer">
+                    <div class="socialIcon1">
+                        <img src="style/sidesocialicons/fb1.png" class="socialiconsingle1">
+                    </div>
+                    <div class="socialIcon1text1">
+                        <h3>FACEBOOK</h3>
+                    </div>
+                </a>
+
+                <a href="https://www.messenger.com/" class="iconbgcontainer">
+                    <div class="socialIcon2">
+                        <img src="style/sidesocialicons/massang1.png" class="socialiconsingle1">
+                    </div>
+                    <div class="socialIcon1text2">
+                        <h3>MESSENGER</h3>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/" class="iconbgcontainer">
+                    <div class="socialIcon3">
+                        <img src="style/sidesocialicons/insta1.png" class="socialiconsingle1">
+                    </div>
+                    <div class="socialIcon1text3">
+                        <h3>INSTAGRAM</h3>
+                    </div>
+                </a>
+
+                <a href="https://twitter.com/" class="iconbgcontainer">
+                    <div class="socialIcon4">
+                        <img src="style/sidesocialicons/twit1.png" class="socialiconsingle1">
+                    </div>
+                    <div class="socialIcon1text4">
+                        <h3>TWITTER</h3>
+                    </div>
+                </a>
+            </div>
+        </header>
+            
+
+        <main>
+
+            <section class="signinAround">
+                <h2>Sign in</h2>
+                <form onsubmit="login()">
+                    <label id="username">Username</label>
+                    <input type="placeholder" id="username" class="inputuser" placeholder="Your username">
+
+                    <label id="password">Password</label>
+                    <input type="password" id="password" class="inputuser" placeholder="Your password">
+
+                    <div class="buttonDiv">
+                        <input type="checkbox" id="checkbox">
+                        <p>Remember</p>
+                        <button>SIGN IN</button>
+                    </div>
+                </form>
+            </section>
+
+            <script type="text/javascript">
+                function login() {
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+                    event.preventDefault();
+                    if (username == "admin", "Admin" && password == "admin") {
+                        // alert("Login Successful");
+                        window.location.href = "/signinSucces.html";
+                    } else {
+                        // alert("Login Failed");
+                        window.location.href = "/signinFailed.html";
+                    }
+                }
+            </script>
+
+        </main>
+
+        <footer class="footer1">
+            <div class="footerDiv1">
+
+               <div class="columer1" id="columer1">
+                    <h4>MOVIES</h4>
+                    <a href="">Crime</a>
+                    <a href="">Drama</a>
+                    <a href="">Comedy</a>
+                    <a href="">Action</a>
+                    <a href="">Adventure</a>
+               </div> 
+
+               <div class="columer1" id="columer2">
+                    <h4>TV SHOW</h4>
+                    <a href="">Crime</a>
+                    <a href="">Drama</a>
+                    <a href="">Comedy</a>
+                    <a href="">Action</a>
+                    <a href="">Adventure</a>
+                </div>
+
+                <div class="columer1" id="columer3">
+                    <h4>ANIMATION</h4>
+                    <a href="">Anime</a>
+                    <a href="">Family</a>
+                    <a href="">Comedy</a>
+                    <a href="">Sci-Fi</a>
+                    <a href="">Adventure</a>
+                </div>
+
+                <div class="columer1" id="columer1Auto">
+                    <div class="socialMedia">
+
+                        <a href="https://www.facebook.com/">
+                            <i class="fa-brands fa-square-facebook" id="facebook"></i>
+                        </a>
+
+                        <a href="https://www.messenger.com/">
+                            <i class="fa-brands fa-facebook-messenger" id="messenger"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/">
+                            <i class="fa-brands fa-instagram" id="instagram"></i>
+                        </a>
+
+                        <a href="https://twitter.com/">
+                            <i class="fa-brands fa-twitter" id="twitter"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/">
+                            <i class="fa-brands fa-youtube" id="youtube"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="subscribeDiv">
+                        <input type="text" placeholder="Subscribe news">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                    <div class="giorgi">
+                    <h2 id="h22">Rating:</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                </div>
+                </div>
+
+            </div>
+        </footer>
+           
+    </body>
+</html>
