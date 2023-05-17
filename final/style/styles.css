@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 body{
@@ -20,6 +27,8 @@ header{
 
 .smallnavAround{
     /* background-color: green; */
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin-bottom: 5px;
 }
@@ -27,9 +36,15 @@ header{
 .smallnav2{
     /* background-color: yellow; */
     /* width: 100%; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: right;
-    align-items: center;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* padding: 0 25px; */
 }
 
@@ -37,9 +52,15 @@ header{
     background-color: #f2f2f2;
     color: #0049cf;
     font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
     padding: 10px 15px;
     margin-right: 5px;
@@ -56,17 +77,27 @@ header{
 
 .navmenuaround1{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* background-color: yellow; */
 }
 
 .navmenuFirst{
     background-color:#184AA2;
     width: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -79,10 +110,18 @@ header{
 
 .navmenuFirst nav{
     /* background-color: yellow; */
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
     width:fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:space-between;
-    align-items: center;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* margin: auto; */
 }
 
@@ -109,8 +148,12 @@ header{
     background-color:rgb(255, 255, 255);
     width: 250px;
     height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 25px;
     margin-left: 15px;
     border-radius: 5px;
@@ -124,6 +167,22 @@ header{
     padding: 0 10px;
     color: black;
     outline: none;
+}
+
+.SearchArea input::-webkit-input-placeholder{
+    color:#184AA2;
+}
+
+.SearchArea input::-moz-placeholder{
+    color:#184AA2;
+}
+
+.SearchArea input:-ms-input-placeholder{
+    color:#184AA2;
+}
+
+.SearchArea input::-ms-input-placeholder{
+    color:#184AA2;
 }
 
 .SearchArea input::placeholder{
@@ -157,8 +216,12 @@ header{
     border-bottom: 1px solid #bfbfbf;
     /* width: 100%; */
     display: none;
-    justify-content:center;
-    align-items: center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px 15px;
 }
 
@@ -175,9 +238,15 @@ header{
     border-radius: 5px;
     width: 100%;
     padding: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 15px;
 }
 
@@ -207,8 +276,12 @@ header{
 .mainCover{
     /* background-color: red; */
     margin-top: 25px;  
+    display: -webkit-box;  
+    display: -ms-flexbox;  
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width:100%;
     margin-bottom: 45px;
 }
@@ -220,10 +293,30 @@ header{
     border-radius: 20px;
     width:1000px;
     height: 250px;
-    animation-name: coverAnime;
-    animation-timing-function: linear;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: coverAnime;
+            animation-name: coverAnime;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 12s;
+            animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes coverAnime {
+    0% {background: url(https://images.hdqwalls.com/download/2022-thor-love-and-thunder-movie-5k-ex-1280x720.jpg?fbclid=IwAR13CCbcuxGLbJ_3NUThj7X-4fzErzJw-TMuDeFxXtdLYjURWu-NBayPsoE); background-size: cover; background-position: center;} 
+    24% {background: url(https://images.hdqwalls.com/download/2022-thor-love-and-thunder-movie-5k-ex-1280x720.jpg?fbclid=IwAR13CCbcuxGLbJ_3NUThj7X-4fzErzJw-TMuDeFxXtdLYjURWu-NBayPsoE); background-size: cover; background-position: center;}
+
+    24.5%{background: url(https://images.hdqwalls.com/download/avengers-endgame-china-poster-6m-1280x800.jpg?fbclid=IwAR0hJmYgOkodJQlCivtPQycluc2w2o6vSCByUQfZDvXoLAMjFkjEo5o6b5U); background-size: cover; background-position: center;}
+    49%{background: url(https://images.hdqwalls.com/download/avengers-endgame-china-poster-6m-1280x800.jpg?fbclid=IwAR0hJmYgOkodJQlCivtPQycluc2w2o6vSCByUQfZDvXoLAMjFkjEo5o6b5U); background-size: cover; background-position: center;}
+
+    49.5%{background: url(https://images.hdqwalls.com/download/dune-12k-qd-1280x720.jpg?fbclid=IwAR12u4KRNSP64ll_hmtfNcsL7MykNmHgAqlzAAkVTBxz-P2TFvfdHCFL4GA); background-size: cover; background-position: center;}
+    74%{background: url(https://images.hdqwalls.com/download/dune-12k-qd-1280x720.jpg?fbclid=IwAR12u4KRNSP64ll_hmtfNcsL7MykNmHgAqlzAAkVTBxz-P2TFvfdHCFL4GA); background-size: cover; background-position: center;}
+
+    74.5%{background: url(https://images.kinorium.com/movie/poster/2157160/w1500_51545540.jpg?fbclid=IwAR1aAPDTPt19L6xKb5FCplRON9fED86L_xVNW8mKo1ohbGnytyHacWuIMGs); background-size: cover; background-position: center;}
+    100%{background: url(https://images.kinorium.com/movie/poster/2157160/w1500_51545540.jpg?fbclid=IwAR1aAPDTPt19L6xKb5FCplRON9fED86L_xVNW8mKo1ohbGnytyHacWuIMGs); background-size: cover; background-position: center;}
+
+
 }
 
 @keyframes coverAnime {
@@ -252,22 +345,34 @@ main{
 
 main section{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
 }
 
 .animeDiv{
     /* background-color: rgb(255, 0, 212); */
     width: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 5px;
 }
 
 .div1{
     /* background-color: #006b30; */
     width: 188px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     border-radius: 5px;
     cursor: pointer;
@@ -312,12 +417,17 @@ main section{
     border-radius: 8px;
     width: 188px;
     height: 250px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .div1:hover .imgDiv img{
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 
@@ -327,8 +437,12 @@ main section{
 .footer1{
     background-color:#f1f1f1;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 50px;
     padding: 50px 0;
     border-top: 1px solid #cccccc;
@@ -338,9 +452,13 @@ main section{
     /* background-color:yellow; */
     width: 1000px;
     /* height: 500px; */
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns:1fr 20px 1fr 20px 1fr 20px auto;
     grid-template-columns:1fr 1fr 1fr auto;
-    column-gap: 20px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
 }
 
 .columer1{
@@ -367,11 +485,19 @@ main section{
 
 .socialMedia{
     /* background-color: aqua; */
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     /* height: 30px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: right;
-    align-items: center;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: auto;
 }
 
@@ -379,14 +505,22 @@ main section{
     background-color: white;
     width: 30px;
     height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* height: fit-content; */
     border-radius: 5px;
     margin: 0;
     /* padding: 5px; */
     margin-left: 5px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -401,23 +535,23 @@ main section{
 }
 
 .socialMedia a:hover #facebook{
-    color: #1778f2; transition: 0.3s;
+    color: #1778f2; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;
 }
 
 .socialMedia a:hover #messenger{
-    color:#00B2FF; transition: 0.3s;
+    color:#00B2FF; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;
 }
 
 .socialMedia a:hover #instagram{
-    color:#E1306C; transition: 0.3s;
+    color:#E1306C; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;
 }
 
 .socialMedia a:hover #twitter{
-    color:#1DA1F2; transition: 0.3s;
+    color:#1DA1F2; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;
 }
 
 .socialMedia a:hover #youtube{
-    color:#FF0000; transition: 0.3s;
+    color:#FF0000; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;
 }
 
 /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
@@ -438,7 +572,8 @@ main section{
     height: 34px;
     outline: none;
     border: 1px solid #7a7a7a;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 5px;
     padding: 0 10px;
 }
@@ -471,20 +606,30 @@ main section{
 }
 
 .iconsDiv .iconbgcontainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .socialiconsingle1{
     width: 22px;
     height: 22px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 
 .iconsDiv .iconbgcontainer:hover .socialiconsingle1{
-    transform: scale(1.2) rotate(360deg);
+    -webkit-transform: scale(1.2) rotate(360deg);
+        -ms-transform: scale(1.2) rotate(360deg);
+            transform: scale(1.2) rotate(360deg);
     
 }
 
@@ -494,9 +639,15 @@ main section{
     background-color: #4267B2;
     width: 40px;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 1003;
     border-bottom: 2px solid black;
 }
@@ -508,16 +659,28 @@ main section{
 
 .socialIcon1text1{
     background-color: #4267B2;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-right: 10px;
     position: absolute;
     z-index: 1002;
     /* margin-left: 40px; */
-    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+            transform: translateX(-200px);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     border-bottom: 2px solid black;
 }
@@ -529,16 +692,24 @@ main section{
 
 .iconsDiv .iconbgcontainer:hover .socialIcon1text1{
     margin-left: 40px;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
 }
 
 .socialIcon2{
     background-color:#0099FF;
     width: 40px;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 1003;
     border-bottom: 2px solid black;
 }
@@ -550,16 +721,28 @@ main section{
 
 .socialIcon1text2{
     background-color: #0099FF;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-right: 10px;
     position: absolute;
     z-index: 1002;
     /* margin-left: 40px; */
-    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+            transform: translateX(-200px);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     border-bottom: 2px solid black;
 }
@@ -571,16 +754,24 @@ main section{
 
 .iconsDiv .iconbgcontainer:hover .socialIcon1text2{
     margin-left: 40px;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
 }
 
 .socialIcon3{
     background-color:#E1306C;
     width: 40px;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 1003;
     border-bottom: 2px solid black;
 }
@@ -592,16 +783,28 @@ main section{
 
 .socialIcon1text3{
     background-color: #E1306C;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-right: 10px;
     position: absolute;
     z-index: 1002;
     /* margin-left: 40px; */
-    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+            transform: translateX(-200px);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     border-bottom: 2px solid black;
 }
@@ -613,16 +816,24 @@ main section{
 
 .iconsDiv .iconbgcontainer:hover .socialIcon1text3{
     margin-left: 40px;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
 }
 
 .socialIcon4{
     background-color:#00acee;
     width: 40px;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 1003;
     border-bottom: 2px solid black;
 }
@@ -634,16 +845,28 @@ main section{
 
 .socialIcon1text4{
     background-color:#00acee;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-right: 10px;
     position: absolute;
     z-index: 1002;
     /* margin-left: 40px; */
-    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+            transform: translateX(-200px);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     border-bottom: 2px solid black;
 }
@@ -655,13 +878,23 @@ main section{
 
 .iconsDiv .iconbgcontainer:hover .socialIcon1text4{
     margin-left: 40px;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
 }
 .giorgi{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:left;
-    align-items: center;
+    -webkit-box-pack:left;
+        -ms-flex-pack:left;
+            justify-content:left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
+    height:-webkit-fit-content;
+    height:-moz-fit-content;
     height:fit-content;
     }
 
@@ -752,7 +985,9 @@ main section{
 
     .navmenuFirst{
         width: 100%;
-        justify-content: center;   
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;   
         border-radius: unset;
     }
 
@@ -765,6 +1000,8 @@ main section{
     }
 
     .logoSearchv2{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -777,8 +1014,12 @@ main section{
     }
 
     .animeDiv{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: left;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
         width: 100%;
         margin-bottom: 15px;
     }
@@ -808,7 +1049,9 @@ main section{
 
     .footerDiv1{
         width: 100%;
-        column-gap: 10px;
+        -webkit-column-gap: 10px;
+           -moz-column-gap: 10px;
+                column-gap: 10px;
     }
 }
 
@@ -836,7 +1079,9 @@ main section{
 
     .navmenuFirst{
         width: 100%;
-        justify-content:left;   
+        -webkit-box-pack:left;
+            -ms-flex-pack:left;
+                justify-content:left;   
         border-radius: unset;
         overflow: auto;
     }
@@ -846,16 +1091,26 @@ main section{
     }
 
     .navmenuFirst nav{
-        justify-content: left;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
+        width:-webkit-fit-content;
+        width:-moz-fit-content;
         width:fit-content;
         padding: 0 15px;
     }
 
     .navmenuFirst nav a{
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content:left;
-        align-items: center;
+        -webkit-box-pack:left;
+            -ms-flex-pack:left;
+                justify-content:left;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
     }
 
@@ -875,6 +1130,8 @@ main section{
     }
 
     .logoSearchv2{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -902,8 +1159,12 @@ main section{
     }
 
     .animeDiv{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: left;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
         width: 100%;
         margin-bottom: 15px;
     }
@@ -933,10 +1194,18 @@ main section{
 
      .footerDiv1{
         width:100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     #columer1, #columer2, #columer3{
@@ -963,22 +1232,3 @@ main section{
     }
 
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
